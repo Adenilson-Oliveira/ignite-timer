@@ -1,9 +1,8 @@
-export const defaultTheme = {
+import { ThemeType } from "../../@types/styled"
+
+export const defaultTheme:ThemeType = {
   primary: 'purple',
-  secondary: '#fff',
+  secondary: 'orange',
+  white: '#fff',
 }
 
-export const variantTheme = {
-  primary: 'cyan',
-  secondary: 'darkcyan',
-}

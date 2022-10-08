@@ -3,8 +3,8 @@ import { ThemeProvider } from 'styled-components'
 
 import { Button } from './components/Button'
 import './styles.css'
-// import { defaultTheme } from './styles/themes/default'
-import { variantTheme, defaultTheme } from './styles/themes/themes'
+import { defaultTheme } from './styles/themes/default'
+import { lightTheme } from './styles/themes/light'
 
 
 
@@ -13,7 +13,7 @@ export function App() {
   const [theme, setTheme] = useState(defaultTheme)
 
   function handleChangeTheme() {
-    const newTheme = theme.id === defaultTheme.id ? variantTheme : defaultTheme
+    const newTheme = theme === defaultTheme ? lightTheme : defaultTheme
     setTheme(newTheme)
     console.log('a')
   }

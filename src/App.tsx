@@ -2,14 +2,11 @@ import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
 
 import { Button } from './components/Button'
-import './styles.css'
+import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
 import { lightTheme } from './styles/themes/light'
 
-
-
 export function App() {
-
   const [theme, setTheme] = useState(defaultTheme)
 
   function handleChangeTheme() {
@@ -20,12 +17,13 @@ export function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Button onhandleChangeTheme={handleChangeTheme} variant='primary' />
-      <Button variant='secondary' />
-      <Button variant='success' />
-      <Button variant='danger' />
+      <Button onhandleChangeTheme={handleChangeTheme} variant="primary" />
+      <Button variant="secondary" />
+      <Button variant="success" />
+      <Button variant="danger" />
       <Button />
+      <p>a</p>
+      <GlobalStyle />
     </ThemeProvider>
   )
 }
-

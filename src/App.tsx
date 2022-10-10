@@ -1,28 +1,27 @@
 import { useState } from 'react'
 import { ThemeProvider } from 'styled-components'
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from './Router'
 
-import { Button } from './components/Button'
 import { GlobalStyle } from './styles/global'
 import { defaultTheme } from './styles/themes/default'
-import { lightTheme } from './styles/themes/light'
+// Import { lightTheme } from './styles/themes/light'
 
 export function App() {
-  const [theme, setTheme] = useState(defaultTheme)
+  const [theme] = useState(defaultTheme)
+  // SetTheme(defaultTheme)
 
-  function handleChangeTheme() {
-    const newTheme = theme === defaultTheme ? lightTheme : defaultTheme
-    setTheme(newTheme)
-    console.log('a')
-  }
+  // function handleChangeTheme() {
+  //   const newTheme = theme === defaultTheme ? lightTheme : defaultTheme
+  //   setTheme(newTheme)
+  //   console.log('a')
+  // }
 
   return (
     <ThemeProvider theme={theme}>
-      <Button onhandleChangeTheme={handleChangeTheme} variant="primary" />
-      <Button variant="secondary" />
-      <Button variant="success" />
-      <Button variant="danger" />
-      <Button />
-      <p>a</p>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
       <GlobalStyle />
     </ThemeProvider>
   )

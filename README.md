@@ -1,7 +1,11 @@
 # ![Logo](src/assets/LogoIgnite.svg) Ignite Timer
 
+## Sobre o projeto
 
-## Temas e Tecnlogias abordados no projeto
+É uma aplicação para praticarmos algo com a técnica pomodoro, nela especificamos a atividade que iremos fazer e o tempo que planejamos pratica lá e ela nós informa o tempo do cyclo atual e um historico com os cyclos anteriores que estão salvas em local stotage
+
+
+### Temas e Tecnlogias abordados no projeto
 
  - Styled Components
  - React Router Dom
@@ -11,7 +15,7 @@
  - React Hook Form
  - @Hookform/resolvers
  - Zod
- - Local History
+ - Local Storage
 
 
 ### Rode o projeto em sua maquina(passo a passo) :

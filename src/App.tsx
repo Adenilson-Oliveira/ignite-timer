@@ -11,12 +11,12 @@ import { CyclesContextProvider } from './contexts/CyclesContext'
 
 export function App() {
   const [theme] = useState(defaultTheme)
+  // - codigo para mudança de tema(incremantar futuramente)
   // SetTheme(defaultTheme)
 
   // function handleChangeTheme() {
   //   const newTheme = theme === defaultTheme ? lightTheme : defaultTheme
   //   setTheme(newTheme)
-  //   console.log('a')
   // }
 
   return (

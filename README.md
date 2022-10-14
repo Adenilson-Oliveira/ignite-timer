@@ -1,4 +1,4 @@
-# ![Logo](src/assets/ignite-logo.svg) Ignite Timer
+# ![Logo](src/assets/LogoIgnite.svg) Ignite Timer
 
 
 ## Temas e Tecnlogias abordados no projeto
